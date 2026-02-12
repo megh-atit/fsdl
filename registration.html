@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainHeading">Student Registration Form</h1>
+        <p class="subtitle">School of Computer Engineering & Technology</p>
+        
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-input">
+                <span class="error-message" id="usernameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="form-input">
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" class="form-input">
+                <span class="error-message" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-input">
+                <span class="error-message" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-input">
+                <span class="error-message" id="confirmPasswordError"></span>
+            </div>
+
+            <button type="submit" id="submitBtn" class="submit-btn">Register Student</button>
+            <button type="button" id="resetBtn" class="reset-btn">Reset Form</button>
+        </form>
+
+        <div id="messageBox" class="message-box"></div>
+
+        <!-- DOM Manipulation Demo Section -->
+        <div class="dom-demo">
+            <h2 class="demo-heading">DOM Manipulation Demo</h2>
+            <button id="changeTextBtn" class="demo-btn">Change Heading Text</button>
+            <button id="changeColorBtn" class="demo-btn">Change Form Color</button>
+            <button id="changeImageBtn" class="demo-btn">Toggle Image</button>
+            <button id="addNodeBtn" class="demo-btn">Add Info Node</button>
+            <button id="deleteNodeBtn" class="demo-btn">Delete Info Node</button>
+            <button id="jqueryTextBtn" class="demo-btn">jQuery: Change Button Text</button>
+            <button id="jqueryBgBtn" class="demo-btn">jQuery: Set Background</button>
+            
+            <div id="imageContainer" class="image-container">
+                <img id="demoImage" src="https://via.placeholder.com/300x200/4CAF50/white?text=Student+Portal" alt="Demo Image">
+            </div>
+            
+            <div id="infoContainer" class="info-container"></div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- External JavaScript -->
+    <script src="validation.js"></script>
+</body>
+</html>
